@@ -4,12 +4,12 @@ import { useSelector } from 'react-redux';
 import Product from '../../../components/Product/Product';
 
 const Cart = () => {
-    const state = useSelector(s => s)
+    const state = useSelector(s => s.product)
     const { cart, loading, error } = state
 
     if (loading) return <p>Loading...............</p>
     if (error) return <p>Reload Again...............</p>
-    if (!loading && !error && !cart.length) return <p>Nothing Added in Cart!</p>
+    if (!loading && !error && !cart?.length) return <p>Nothing Added in Cart!</p>
 
     return (
         <div>

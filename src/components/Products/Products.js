@@ -1,12 +1,12 @@
 import React from 'react';
-import { Nav, Card, Col, Container, Row, ButtonGroup, Button } from 'react-bootstrap';
+import { Card, Col, Container, Row, ButtonGroup, Button } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import Product from '../Product/Product';
 
 const Products = () => {
     // const state = useSelector(s => s)
     // const { products, loading, error } = state
-    const { products, loading, error } = useSelector(s => s)
+    const { products, loading, error } = useSelector(s => s.product)
 
     if (loading) return <p>Loading...............</p>
     if (error) return <p>Reload Again...............</p>
