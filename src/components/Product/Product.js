@@ -3,7 +3,7 @@ import { Button, Card, Col, ListGroup, Row } from 'react-bootstrap';
 import { FaCartPlus, FaCross, FaStudiovinari } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { addToCart, removeFromCart } from '../../../redux/actionCreators/productAction';
+import { addToCart, removeFromCart } from '../../redux/actionCreators/productAction';
 
 const Product = ({ product }) => {
     const dispatch = useDispatch()

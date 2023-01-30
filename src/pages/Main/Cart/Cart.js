@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
-import Product from '../ProductShow/Product/Product';
+import Product from '../../../components/Product/Product';
 
 const Cart = () => {
     const state = useSelector(s => s)
