@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import { FaHome, FaOpencart, FaPhabricator, FaPlus } from 'react-icons/fa'
+import { FaDatabase, FaHome, FaOpencart, FaPhabricator, FaPlus } from 'react-icons/fa'
 
 const Header = () => {
     return (
@@ -20,7 +20,7 @@ const Header = () => {
                             <Link className='text-decoration-none text-primary fw-bold fs-2' to="/"><FaHome /> Home</Link>
                         </Nav>
                         <div className="d-flex">
-                            <Link className='text-decoration-none text-muted me-3' to="/add-product"><FaPlus /> Add Product</Link>
+                            <Link className='text-decoration-none text-muted me-3' to="/dashboard"><FaDatabase /> Dashboard</Link>
                             <Link className='text-decoration-none text-muted me-3' to="/features"><FaPhabricator /> Top Rated</Link>
                             <Link className='text-decoration-none text-muted me-3' to="/cart"><FaOpencart /> Cart</Link>
                         </div>

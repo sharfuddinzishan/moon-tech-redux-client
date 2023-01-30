@@ -6,7 +6,7 @@ const AddProduct = () => {
         <div>
             <Container>
                 <Form>
-                    <Row className="mb-3">
+                    <Row className="my-3">
                         <Form.Group as={Col} controlId="model">
                             <Form.Label>Model</Form.Label>
                             <Form.Control type="text" name="model" placeholder="Model" />
