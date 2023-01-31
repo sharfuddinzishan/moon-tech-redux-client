@@ -34,9 +34,13 @@ const productReducer = (state = initialState, action) => {
             if (isProductExist) {
                 newCart = state.cart.filter(c => c._id !== isProductExist._id)
                 action.payload.quantity = isProductExist.quantity + 1
+                console.log(isProductExist.price, ' - ', isProductExist.CartSerial);
+                action.payload.CartSerial = isProductExist.CartSerial
+
             }
             else {
                 action.payload.quantity = 1
+                action.payload.CartSerial = state.cart.length
             }
             return {
                 ...state,
